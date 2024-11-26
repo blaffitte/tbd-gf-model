@@ -20,15 +20,17 @@ commit_messages=(
 # Boucle pour générer les commits
 for i in $(seq 1 $NBR_COMMITS)
 do
+   
     # Créer un fichier temporaire pour chaque commit
     touch "tempfile_$i.txt"
-    git add "tempfile_$i.txt"
+    git add .
     
     # Sélectionner un message de commit aléatoire
     commit_message=${commit_messages[$RANDOM % ${#commit_messages[@]}]}
     
     # Créer le commit
     git commit -m "$commit_message"
+     git checkout -b "feature/gf_mafuturefeature$i" project/VSI23.01_TDV3
     
     echo "Commit $i: $commit_message"
 done
