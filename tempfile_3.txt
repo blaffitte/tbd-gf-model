@@ -1,2 +1,2 @@
-2594
-Commit 3: Mise à jour de la documentation
+22283
+Commit 3: Correction des fautes de frappe
