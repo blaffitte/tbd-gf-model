@@ -1,2 +1,2 @@
-18320
-Commit 8: Amélioration de l'interface utilisateur
+19910
+Commit 8: Correction des fautes de frappe
